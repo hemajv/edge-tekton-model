@@ -1,0 +1,10 @@
+check:
+  - thoth-precommit
+  - thoth-build
+build:
+  base-image: "seldonio/seldon-core-s2i-python36:0.18"
+  build-stratergy: Source
+  registry: quay.io
+  registry-org: hveeradh
+  registry-project: edgemodel
+  registry-secret: hveeradh-edge-pull-secret
