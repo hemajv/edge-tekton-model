@@ -3,6 +3,7 @@ check:
   - thoth-build
 build:
   base-image: "seldonio/seldon-core-s2i-python36:0.18"
+  build-source-script: "image:///s2i/bin/"
   build-stratergy: Source
   registry: quay.io
   registry-org: hveeradh
